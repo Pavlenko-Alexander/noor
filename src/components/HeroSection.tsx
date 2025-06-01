@@ -1,4 +1,6 @@
 import React from 'react';
+import starsImage from '../assets/images/stars.webp';
+import cardsImage from '../assets/images/cards.png';
 
 interface HeroSectionProps {
   productImageUrl: string;
@@ -23,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="md:w-3/5 text-center my-[15px] xl:my-7.5">
           <div className="flex items-center justify-center mb-2 xl:mb-5">
             <img
-              src="/stars.webp"
+              src={starsImage}
               alt="5 stars"
               width={70}
               height={13}
@@ -71,7 +73,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               100% Satisfaction. 180-Day Money Back Guarantee
             </div>
             <img
-              src="/cards.png"
+              src={cardsImage}
               alt="Cards"
               width={208}
               height={21}
